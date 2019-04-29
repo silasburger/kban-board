@@ -1,11 +1,16 @@
 import React from 'react';
 import Card from './Card';
 
-class Column extends React.Component {
+class Column extends React.PureComponent {
   constructor(props) {
     super(props);
 
     this.handleClick = this.handleClick.bind(this);
+  }
+
+  shouldComponentUpdate() {
+    console.log('csu');
+    return true;
   }
 
   handleClick(e) {

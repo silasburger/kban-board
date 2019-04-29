@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Card extends React.Component {
+class Card extends React.PureComponent {
 
   handleMoveUp = (e) => {
     this.props.moveCard(this.props.cName, 'up', this.props.task, this.props.id);
