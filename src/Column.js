@@ -8,11 +8,6 @@ class Column extends React.PureComponent {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  shouldComponentUpdate() {
-    console.log('csu');
-    return true;
-  }
-
   handleClick(e) {
     let taskResponse = window.prompt('Add a task');
 
